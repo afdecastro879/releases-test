@@ -24,14 +24,6 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
-      - run:
-          name: Create release branch
-          command: |
-            npx semantic-release --dry-run --no-ci
-            if test -e .VERSION; then
-              git checkout -b release/$(cat .VERSION)
-              git push origin release/$(cat .VERSION)
-            fi
       - run: npx semantic-release
 
 workflows:
