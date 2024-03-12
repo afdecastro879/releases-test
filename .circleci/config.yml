@@ -28,7 +28,10 @@ jobs:
           name: Create release branch
           command: |
             npx semantic-release --dry-run --no-ci
-            test -e .VERSION || git checkout -b release/$(cat .VERSION)
+            if test -e .VERSION; then
+              git checkout -b release/$(cat .VERSION)
+              git push origin release/$(cat .VERSION)
+            fi
       - run: npx semantic-release
 
 workflows:
