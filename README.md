@@ -1,3 +1,3 @@
 # releases-test
 
-## Small change
+## Small change.
