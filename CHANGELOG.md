@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/afdecastro879/releases-test/compare/v1.0.2...v1.0.3) (2024-03-12)
+
+
+### Bug Fixes
+
+* push a new branch ([38bde33](https://github.com/afdecastro879/releases-test/commit/38bde335beb07916e9fab9281a9d48cc4803f038))
+
 ## [1.0.2](https://github.com/afdecastro879/releases-test/compare/v1.0.1...v1.0.2) (2024-03-12)
 
 
