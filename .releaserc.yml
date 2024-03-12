@@ -1,0 +1,13 @@
+branches:
+  - name: main
+    prerelease: false
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/changelog"
+  - - "@semantic-release/git"
+    - message: 'chore(release): ${nextRelease.version}'
+  - "@semantic-release/github"
+  - - "@semantic-release/exec"
+    - publishCmd: |
+        echo "${nextRelease.notes}" > /tmp/release-notes.md

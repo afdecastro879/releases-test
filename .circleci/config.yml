@@ -1,0 +1,38 @@
+version: 2.1
+
+master_only: &main_only
+  filters:
+    branches:
+      only: main
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/base:2024.02
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Staging
+          command: |
+            echo "Deploying to staging"
+  release:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run: npx semantic-release
+
+workflows:
+  stack:
+    jobs:
+      - deploy:
+          <<: *main_only
+      - hold_release:
+          type: approval
+          <<: *main_only
+      - release:
+          <<: *main_only
