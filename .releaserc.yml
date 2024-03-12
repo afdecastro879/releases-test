@@ -6,12 +6,11 @@ plugins:
   - "@semantic-release/release-notes-generator"
   - "@semantic-release/changelog"
   - - "@semantic-release/exec"
-    - publishCmd: |
+    - generateNotesCmd: |
         git checkout -b release/${nextRelease.version}
         git push origin release/${nextRelease.version}
+    - publishCmd: |
+        echo "${nextRelease.notes}" > /tmp/release-notes.md
   - - "@semantic-release/git"
     - message: 'chore(release): ${nextRelease.version}'
   - "@semantic-release/github"
-  - - "@semantic-release/exec"
-    - publishCmd: |
-        echo "${nextRelease.notes}" > /tmp/release-notes.md
