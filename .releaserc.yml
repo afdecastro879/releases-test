@@ -9,7 +9,7 @@ plugins:
     - generateNotesCmd: |
         git checkout -b release/${nextRelease.version}
         git push origin release/${nextRelease.version}
-    - publishCmd: |
+      publishCmd: |
         echo "${nextRelease.notes}" > /tmp/release-notes.md
   - - "@semantic-release/git"
     - message: 'chore(release): ${nextRelease.version}'
