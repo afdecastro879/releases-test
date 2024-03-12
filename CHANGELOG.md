@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/afdecastro879/releases-test/compare/v1.0.1...v1.0.2) (2024-03-12)
+
+
+### Bug Fixes
+
+* create a release branch based on the next version ([a6e1be0](https://github.com/afdecastro879/releases-test/commit/a6e1be0cecde1f55918dd1f317b5b0792ab07fa6))
+
 ## [1.0.1](https://github.com/afdecastro879/releases-test/compare/v1.0.0...v1.0.1) (2024-03-12)
 
 
