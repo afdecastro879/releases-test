@@ -30,9 +30,14 @@ workflows:
   stack:
     jobs:
       - deploy:
+          name: deploy_staging
           <<: *main_only
       - hold_release:
           type: approval
+          requires:
+            - deploy_staging
           <<: *main_only
       - release:
+          requires:
+            - hold_release
           <<: *main_only
