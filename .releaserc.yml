@@ -9,5 +9,7 @@ plugins:
     - message: 'chore(release): ${nextRelease.version}'
   - "@semantic-release/github"
   - - "@semantic-release/exec"
+    - verifyReleaseCmd: |
+        echo ${nextRelease.version} > .VERSION
     - publishCmd: |
         echo "${nextRelease.notes}" > /tmp/release-notes.md
