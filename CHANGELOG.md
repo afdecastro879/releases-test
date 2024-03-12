@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/afdecastro879/releases-test/compare/v1.0.4...v1.0.5) (2024-03-12)
+
+
+### Bug Fixes
+
+* another commit ([71917fe](https://github.com/afdecastro879/releases-test/commit/71917fee57144252ba40b436de41aad630aeac05))
+
 ## [1.0.4](https://github.com/afdecastro879/releases-test/compare/v1.0.3...v1.0.4) (2024-03-12)
 
 
