@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/afdecastro879/releases-test/compare/v1.0.0...v1.0.1) (2024-03-12)
+
+
+### Bug Fixes
+
+* check next version ([b34ce7d](https://github.com/afdecastro879/releases-test/commit/b34ce7d79b5c1a248f98f959b0f301d30db092a0))
+* check next version ([53a150c](https://github.com/afdecastro879/releases-test/commit/53a150c02926f626bca579bd52db64eb4cab8d56))
+* write next version to .VERSION file ([cdf5bee](https://github.com/afdecastro879/releases-test/commit/cdf5bee2af3b4d9e0f49bdaa2e514646e2a22b6f))
+
 # 1.0.0 (2024-03-12)
 
 
