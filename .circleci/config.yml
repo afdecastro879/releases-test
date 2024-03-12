@@ -22,6 +22,11 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - run:
+          name: Create release branch
+          command: |
+            npx semantic-release --dry-run --no-ci
+            cat .VERSION
       - node/install-packages:
           pkg-manager: yarn
       - run: npx semantic-release
