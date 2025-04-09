@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/afdecastro879/releases-test/compare/v1.1.0...v1.1.1) (2025-04-09)
+
+
+### Bug Fixes
+
+* This is a feature change ([375850e](https://github.com/afdecastro879/releases-test/commit/375850e1988410f58a2f16d9573342f019fde458))
+
 # [1.1.0](https://github.com/afdecastro879/releases-test/compare/v1.0.6...v1.1.0) (2025-04-09)
 
 
