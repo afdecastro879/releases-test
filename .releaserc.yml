@@ -1,8 +1,6 @@
 branches:
   - name: main
     prerelease: false
-  - name: release/production
-    prerelease: false
 plugins:
   - "@semantic-release/commit-analyzer"
   - "@semantic-release/release-notes-generator"
